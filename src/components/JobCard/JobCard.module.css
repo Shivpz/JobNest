@@ -1,0 +1,24 @@
+/* src/components/JobCard/JobCard.module.css */
+.card {
+    @apply bg-white rounded-2xl p-5 shadow-md hover:shadow-lg border border-gray-200 hover:border-blue-500 transition duration-300 transform hover:scale-105;
+}
+
+.title {
+    @apply text-xl font-semibold text-gray-800 mb-2;
+}
+
+.location {
+    @apply flex items-center text-gray-500 text-sm mb-2;
+}
+
+.description {
+    @apply text-sm text-gray-600 mb-3 line-clamp-2;
+}
+
+.skillTag {
+    @apply bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-medium;
+}
+
+.detailsLink {
+    @apply text-sm font-semibold text-blue-600 hover:text-blue-800 transition;
+}

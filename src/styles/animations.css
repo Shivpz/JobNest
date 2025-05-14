@@ -1,0 +1,51 @@
+/* Gradient background for specific sections */
+.section-gradient {
+    background: linear-gradient(135deg, #6EE7B7, #3B82F6, #9333EA);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Keyframes for the smooth gradient transition */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Add keyframes for fading in and sliding */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Apply the fade-in animation for the whole page content */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.5s ease-out;
+}

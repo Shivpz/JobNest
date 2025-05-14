@@ -1,0 +1,5 @@
+/* src/components/Footer/Footer.module.css */
+.footer {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  font-size: 0.95rem;
+}

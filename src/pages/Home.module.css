@@ -1,0 +1,39 @@
+.heroSection {
+  @apply text-center py-20 text-white rounded-lg shadow-xl mb-12 relative overflow-hidden;
+  background: linear-gradient(135deg, #6ee7b7, #3b82f6, #9333ea);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.aboutSection {
+  @apply bg-blue-50 p-8 rounded-lg shadow-lg mb-10 text-center;
+}
+
+.exploreSection {
+  @apply py-16;
+  background: linear-gradient(135deg, #6ee7b7, #3b82f6, #26da2f);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.featuresSection {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 py-12 px-4 md:px-6;
+  background: linear-gradient(135deg, #e0f7fa, #fff3e0, #e1bee7);
+}
+
+.testimonialSection {
+  @apply text-white p-8 rounded-lg shadow-lg mt-10;
+  background: linear-gradient(to right, #8e44ad, #e91e63, #e74c3c);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
